@@ -4,18 +4,9 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.example</groupId>
-	<artifactId>nestoop-parent</artifactId>
+	<artifactId>nestoop-mq</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<modules>
-		<module>nestoop-interfaces</module>
-		<module>nestoop-service</module>
-		<module>nestoop-config</module>
-		<module>nestoop-client</module>
-		<module>nestoop-controller</module>
-		<module>nestoop-dubbo-context</module>
-		<module>nestoop-mq</module>
-	</modules>
-	<packaging>pom</packaging>
+	<packaging>jar</packaging>
 
 	<name>demo</name>
 	<description>Demo project for Spring Boot</description>
@@ -23,7 +14,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.4.1.RELEASE</version>
+		<version>1.4.2.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
@@ -41,14 +32,13 @@
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
+			<artifactId>spring-boot-starter-amqp</artifactId>
 		</dependency>
 
 		<dependency>
-			<groupId>com.alibaba</groupId>
-			<artifactId>dubbo</artifactId>
-			<version>2.8.4</version>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
 		</dependency>
 	</dependencies>
 
@@ -60,5 +50,6 @@
 			</plugin>
 		</plugins>
 	</build>
+
 
 </project>
