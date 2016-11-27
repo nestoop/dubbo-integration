@@ -1,10 +1,7 @@
 package com.example.server;
 
 import com.rabbitmq.client.*;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
-import javax.annotation.PostConstruct;
 import java.io.IOException;
 import java.util.concurrent.TimeoutException;
 
@@ -16,7 +13,7 @@ import java.util.concurrent.TimeoutException;
  */
 public class RabbitMQServer {
 
-    private final static String QUEUE_NAME="RPC_QUEUE";
+    private final static String QUEUE_NAME = "RPC_QUEUE";
 
 
     public static void main(String[] args) throws IOException, TimeoutException, InterruptedException {
@@ -39,7 +36,7 @@ public class RabbitMQServer {
             AMQP.BasicProperties repliyProperties =
                     new AMQP.BasicProperties().builder().correlationId(properties.getCorrelationId()).build();
 
-            String message = new String (delivery.getBody());
+            String message = new String(delivery.getBody());
 
             System.out.println("server receive message : " + message);
 
