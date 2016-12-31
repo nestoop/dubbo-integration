@@ -1,4 +1,4 @@
-package cn.nest.constants;
+package cn.nest.annotation.constants;
 
 /**
  * Created by perk

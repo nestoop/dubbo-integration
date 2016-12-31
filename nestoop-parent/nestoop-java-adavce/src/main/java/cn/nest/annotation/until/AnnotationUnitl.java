@@ -1,8 +1,8 @@
-package cn.nest.until;
+package cn.nest.annotation.until;
 
 import cn.nest.annotation.BeanTransfer;
 import cn.nest.annotation.ColumTransfer;
-import cn.nest.constants.TransferType;
+import cn.nest.annotation.constants.TransferType;
 import com.alibaba.fastjson.JSON;
 import org.springframework.util.StringUtils;
 

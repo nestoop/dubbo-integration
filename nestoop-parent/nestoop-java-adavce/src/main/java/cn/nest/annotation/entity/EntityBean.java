@@ -1,4 +1,4 @@
-package cn.nest.entity;
+package cn.nest.annotation.entity;
 
 import cn.nest.annotation.BeanTransfer;
 import cn.nest.annotation.ColumTransfer;

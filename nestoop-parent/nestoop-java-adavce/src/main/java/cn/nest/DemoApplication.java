@@ -1,7 +1,7 @@
 package cn.nest;
 
-import cn.nest.entity.EntityBean;
-import cn.nest.until.AnnotationUnitl;
+import cn.nest.annotation.entity.EntityBean;
+import cn.nest.annotation.until.AnnotationUnitl;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
