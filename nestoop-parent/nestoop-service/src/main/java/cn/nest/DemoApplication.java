@@ -9,7 +9,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import javax.annotation.Resource;
 
 @SpringBootApplication
-@MapperScan("com.example.model.mapper")
+@MapperScan("cn.nest.model.mapper")
 public class DemoApplication implements CommandLineRunner{
 
 	@Resource

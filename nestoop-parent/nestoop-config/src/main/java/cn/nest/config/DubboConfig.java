@@ -44,7 +44,7 @@ public class DubboConfig {
     @ConfigurationProperties(prefix = "dubbo.annotation")
     public AnnotationBean annotationBean() {
         AnnotationBean annotationBean = new AnnotationBean();
-        annotationBean.setPackage("com.example");
+        annotationBean.setPackage("cn.nest");
         return annotationBean;
     }
 }

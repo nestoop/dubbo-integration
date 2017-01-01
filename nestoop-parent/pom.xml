@@ -3,7 +3,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.example</groupId>
+	<groupId>cn.nest</groupId>
 	<artifactId>nestoop-parent</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<modules>
@@ -12,7 +12,6 @@
 		<module>nestoop-config</module>
 		<module>nestoop-client</module>
 		<module>nestoop-controller</module>
-		<module>nestoop-dubbo-context</module>
 		<module>nestoop-mq</module>
 		<module>nestoop-mongodb</module>
 		<module>nestoop-kafka</module>
@@ -21,16 +20,19 @@
 		<module>nestoop-redis</module>
 		<module>nestoop-mock</module>
 		<module>nestoop-java-adavce</module>
+		<module>nestoop-dubbo-adavce</module>
+		<module>nestoop-dubbo-adavce</module>
 	</modules>
+
 	<packaging>pom</packaging>
 
-	<name>demo</name>
+	<name>nestoop-parent</name>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.4.1.RELEASE</version>
+		<version>1.4.3.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 

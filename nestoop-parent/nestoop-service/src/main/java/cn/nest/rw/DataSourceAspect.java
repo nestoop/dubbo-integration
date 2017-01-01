@@ -21,7 +21,7 @@ public class DataSourceAspect {
         return handler.get();
     }
 
-    @Before("execution(* com.example.model.mapper.*.*(..))")
+    @Before("execution(* cn.nest.model.mapper.*.*(..))")
     public void setDataSource(JoinPoint joinPoint) {
         String methodName = joinPoint.getSignature().getName();
         System.out.println("method name :" + methodName);
