@@ -21,7 +21,7 @@
 		<module>nestoop-mock</module>
 		<module>nestoop-java-adavce</module>
 		<module>nestoop-dubbo-adavce</module>
-		<module>nestoop-dubbo-adavce</module>
+		<module>nestoop-converter</module>
 	</modules>
 
 	<packaging>pom</packaging>
@@ -58,6 +58,12 @@
 			<groupId>com.alibaba</groupId>
 			<artifactId>dubbo</artifactId>
 			<version>2.8.4</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.springframework</groupId>
+					<artifactId>spring</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 
 		<dependency>
