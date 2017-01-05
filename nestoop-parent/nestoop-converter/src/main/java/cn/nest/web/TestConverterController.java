@@ -1,5 +1,6 @@
 package cn.nest.web;
 
+import cn.nest.model.Vscode;
 import org.springframework.web.bind.annotation.*;
 
 /**
@@ -11,9 +12,15 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 public class TestConverterController {
 
-    @RequestMapping(value = "/test", method = RequestMethod.GET)
-    public @ResponseBody  String testConverter(@RequestBody String code) {
-        System.out.println("code ===: " + code);
+    @RequestMapping(value = "/json", method = RequestMethod.POST)
+    public @ResponseBody  String testJSONConverter(@RequestBody Vscode code) {
+        System.out.println("==========" + code.getVisaCode());
+        return "ok";
+    }
+
+    @RequestMapping(value = "/xml", method = RequestMethod.POST)
+    public @ResponseBody  String testXMLConverter(@RequestBody Vscode code) {
+        System.out.println("==========" + code.getVisaCode());
         return "ok";
     }
 }
