@@ -38,7 +38,7 @@
 
 		<dependency>
 			<groupId>cn.nest</groupId>
-			<artifactId>nestoop-dubbo-api</artifactId>
+			<artifactId>nestoop-dubbo-apis</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>

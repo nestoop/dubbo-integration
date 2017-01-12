@@ -9,9 +9,10 @@ import cn.nest.interfaces.IHelloService;
  * @description
  */
 public class HelloServiceImpl implements IHelloService {
+
     @Override
     public String sayHello(String say) {
-        System.out.println("say: " + say );
-        return "hello " + say;
+        System.out.println("say............");
+        return "bottter say: " + say;
     }
 }
