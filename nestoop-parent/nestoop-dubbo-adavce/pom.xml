@@ -19,6 +19,7 @@
         <module>nestoop-dubbo-provider</module>
         <module>nestoop-dubbo-consumer</module>
         <module>nestoop-dubbo-api</module>
+        <module>nestoop-dubbo-apis</module>
     </modules>
 
 </project>
